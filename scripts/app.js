@@ -1,7 +1,7 @@
 'use strict';
 
-var jsformationApp = angular.module('jsformationApp', [])
-  .config(['$routeProvider', function($routeProvider) {
+angular.module('jsformationApp', [])
+  .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -10,4 +10,4 @@ var jsformationApp = angular.module('jsformationApp', [])
       .otherwise({
         redirectTo: '/'
       });
-  }]);
+  });
