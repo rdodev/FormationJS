@@ -1,9 +1,9 @@
-<div class="hero-unit">
-  <h1>'Allo, 'Allo!</h1>
-  <p>You now have</p>
-  <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
-  </ul>
-  <p>installed.</p>
-  <h3>Enjoy coding! - Yeoman</h3>
+<div class="control-group">
+  <label class="control-label" for="inputIcon">Please enter a description for this stack</label>
+  <div class="controls">
+    <div class="input-append">
+      <input ng-model="cfObj.Description" class="span5" id="inputIcon" type="text" ng-change="printJSON()">
+      <button class="btn" type="button" ng-click="resources()">Next!</button>
+    </div>
+  </div>
 </div>
